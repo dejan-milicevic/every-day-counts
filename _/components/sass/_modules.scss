@@ -1,15 +1,13 @@
 // Footer ---------------------------------------------------
 
 footer {
+    width: 100%;
     #social_networks {
-        @include span(4);
-        float: right;
-        padding-top: 20px;
         height: 55px;
+        padding-top: 20px;
         li {
             display: inline;
             padding-left: 25px;
-            height: 20px;
         }
         li:last-child {
             padding-right: 25px;
@@ -20,11 +18,28 @@ footer {
                 color: $share;
             }
         }
+        // Tablet view
+        @include breakpoint($tablet) {
+            width: 70%;
+            height: 40px;
+            float: right;
+            padding: 10px 25px 0 0;
+            text-align: right;
+        } //breakpoint
     }
     #copyright {
-        @include span(4);
+        height: 25px;
         font-family: $font-light;
         font-size: 1.1rem;
-        height: 25px;
+        // Tablet view
+        @include breakpoint($tablet) {
+            width: 25%;
+            height: 40px;
+            float: left;
+            padding-left: 40px;
+            margin-right: 0;
+            line-height: 40px;
+            text-align: left;
+        } //breakpoint
     }
 }    

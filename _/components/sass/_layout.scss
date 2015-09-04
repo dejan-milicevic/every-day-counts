@@ -7,12 +7,13 @@ $grid-padding       : 1.5em;
 
 @include border-box-sizing;
 
-$tablet             : 48em;
-$desktop            : 76.8em;
+$tablet             : 480px;
+$desktop            : 768px;
 
 // Footer ---------------------------------------------------
 
 footer {
+    @include container;
     background-color: $blue;
     color: white;
     height: 80px;
@@ -20,4 +21,8 @@ footer {
     div {
         display: block;
     }
+    // Tablet view
+    @include breakpoint($tablet) {
+        height: 40px;
+    } //breakpoint
 }
