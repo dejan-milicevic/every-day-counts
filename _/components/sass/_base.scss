@@ -1,0 +1,15 @@
+@include font-face("SPBold", font-files("Mostardesign - Sofia Pro Bold.otf"));
+@include font-face("SPLight", font-files("Mostardesign - Sofia Pro Light.otf"));
+@include font-face("SPMedium", font-files("Mostardesign - Sofia Pro Medium.otf"));
+@include font-face("SPRegular", font-files("Mostardesign - Sofia Pro Regular.otf"));
+
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css');
+
+html { 
+    font-size: 62.5%; 
+    background: $white;
+}
+
+body {
+    min-width: 320px;
+}

@@ -1,0 +1,23 @@
+// Susy setup ---------------------------------------------------
+
+$total-columns      : 4;
+$column-width       : 11.25em;
+$gutter-width       : 0;
+$grid-padding       : 1.5em;
+
+@include border-box-sizing;
+
+$tablet             : 48em;
+$desktop            : 76.8em;
+
+// Footer ---------------------------------------------------
+
+footer {
+    background-color: $blue;
+    color: white;
+    height: 80px;
+    text-align: center;
+    div {
+        display: block;
+    }
+}

@@ -1,0 +1,30 @@
+// Footer ---------------------------------------------------
+
+footer {
+    #social_networks {
+        @include span(4);
+        float: right;
+        padding-top: 20px;
+        height: 55px;
+        li {
+            display: inline;
+            padding-left: 25px;
+            height: 20px;
+        }
+        li:last-child {
+            padding-right: 25px;
+        }
+        .fa {
+            color: white;
+            &:hover {
+                color: $share;
+            }
+        }
+    }
+    #copyright {
+        @include span(4);
+        font-family: $font-light;
+        font-size: 1.1rem;
+        height: 25px;
+    }
+}    
